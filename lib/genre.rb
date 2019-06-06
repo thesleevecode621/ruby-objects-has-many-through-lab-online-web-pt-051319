@@ -6,4 +6,5 @@ class Genre
     @name = name
     
   end 
+  
 end 
