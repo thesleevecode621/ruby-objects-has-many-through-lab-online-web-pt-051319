@@ -8,4 +8,5 @@ class Doctor
     @name = name
     ALL << self
   end
+  
 end 
