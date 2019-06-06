@@ -6,7 +6,7 @@ ALL = []
     ALL<< self
   end 
 def self.all 
-  All 
+ ALL
   
 end 
   def new_song(name, genre)
