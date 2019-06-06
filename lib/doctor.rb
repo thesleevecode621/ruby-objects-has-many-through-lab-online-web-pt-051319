@@ -12,7 +12,7 @@ class Doctor
     ALL
   end
   def new_appointment(name, appointment)
-    song = Song.new(name, self, genre)
+    song = Song.new(name, self, new_appointment)
     self.songs.last
   end
 end 
