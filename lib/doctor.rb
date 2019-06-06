@@ -13,6 +13,6 @@ class Doctor
   end
   def new_appointment(name, appointment)
     song = Song.new(name, self, new_appointment)
-    self.songs.last
+    self.appointments.last
   end
 end 
