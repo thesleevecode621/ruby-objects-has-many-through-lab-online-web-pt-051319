@@ -11,8 +11,20 @@ class Doctor
   def self.all
     ALL
   end
-  def new_appointment(name, appointment)
-    song = Song.new(name, self, new_appointment)
-    self.appointments.last
+ def new_appointment(patient, date)
+    Appointment.new(patient, self, date)
   end
-end 
+
+   def appointments
+    Appointment.all.select do |appointment|
+      appointment.doctor == self
+    end
+  end
+
+   def patients
+    appointments.map do |appointment|
+      appointment.patients
+    end
+  end
+
+ end
